@@ -1,0 +1,57 @@
+
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/atyagi012/Sel_Nov16.git
+git push -u origin master
+==========================================
+
+imp links
+
+https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+==========================================
+
+1. Open github.com
+2. Create a repo
+3. Download GIT  from below link and install it
+	https://git-scm.com/downloads
+
+4. Go to project location which you want to upload
+
+5. Do right click and you will be having option like GIT BASH
+
+6. Use below command
+	git config --global user.name "USERNAME"       //login github - Onetime
+
+7. Use below command
+	git config --global user.email "EMAIL ID"      //login github - onetime
+
+8. git init       - Onetime
+
+* git status     - To know status of your files
+
+9. git add .       //. means complete project, you can mention specific filename OR specific extension
+
+10. git commit -m "message"
+
+11. git remote add origin https://github.com/atyagi012/Sel_Nov16.git       - Onetime
+
+12. git push -u origin master 
+
+=============================================
+
+When downloading code/project/file from repo
+
+If FIRST TIME
+
+clone           //onetime
+git clone REPO_ADDS
+
+if done clone already
+
+pull
+git pull origin BRANCHNAME
+
+##########################
+
+
