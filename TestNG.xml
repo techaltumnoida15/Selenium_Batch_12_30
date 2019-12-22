@@ -6,9 +6,9 @@
   <test name="Regression">
     <classes>
       <!-- <class name="packageName.TestName/> -->
-      <class name="dec_21.NaukriTest"/>
-      <!-- <class name="dec_21.Test03"/>
-      <class name="myPack01.FindBrokenLinks"/> -->
+      <!-- <class name="dec_21.NaukriTest"/> -->
+      <class name="dec_21.Test02"/>
+      <!-- <class name="myPack01.FindBrokenLinks"/> -->
     </classes>
   </test>
 </suite>

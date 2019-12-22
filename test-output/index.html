@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-TestNG_Suite">
-              <span class="suite-name border-passed">TestNG Suite</span>
+              <span class="suite-name border-failed">TestNG Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,26 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-TestNG_Suite" class="hide-methods passed suite-TestNG_Suite"> (hide)</a> <!-- hide-methods passed suite-TestNG_Suite -->
-                      <a href="#" panel-name="suite-TestNG_Suite" class="show-methods passed suite-TestNG_Suite"> (show)</a> <!-- show-methods passed suite-TestNG_Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestNG_Suite" class="hide-methods failed suite-TestNG_Suite"> (hide)</a> <!-- hide-methods failed suite-TestNG_Suite -->
+                      <a href="#" panel-name="suite-TestNG_Suite" class="show-methods failed suite-TestNG_Suite"> (show)</a> <!-- show-methods failed suite-TestNG_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-TestNG_Suite">
+                    <div class="method-list-content failed suite-TestNG_Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Suite" title="dec_21.NaukriTest" hash-for-method="searchNaukri(http://www.naukri.com, C#, Gurgaon)">searchNaukri(http://www.naukri.com, C#, Gurgaon)</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Suite" title="dec_21.Test02" hash-for-method="snapdealTest">snapdealTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Suite" title="dec_21.NaukriTest" hash-for-method="searchNaukri(http://www.naukri.com, Java, Noida)">searchNaukri(http://www.naukri.com, Java, Noida)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-TestNG_Suite -->
+                    </div> <!-- method-list-content failed suite-TestNG_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,30 +117,28 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestNG_Suite" class="panel TestNG_Suite">
-          <div class="suite-TestNG_Suite-class-passed">
+          <div class="suite-TestNG_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">dec_21.NaukriTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">dec_21.Test02</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="searchNaukri(http://www.naukri.com, C#, Gurgaon)">
-                  </a> <!-- searchNaukri(http://www.naukri.com, C#, Gurgaon) -->
-                  <span class="method-name">searchNaukri</span>
-                  <span class="parameters">(http://www.naukri.com, C#, Gurgaon)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchNaukri(http://www.naukri.com, Java, Noida)">
-                  </a> <!-- searchNaukri(http://www.naukri.com, Java, Noida) -->
-                  <span class="method-name">searchNaukri</span>
-                  <span class="parameters">(http://www.naukri.com, Java, Noida)</span>
+                  <a name="snapdealTest">
+                  </a> <!-- snapdealTest -->
+                  <span class="method-name">snapdealTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: Page url doesnt match. expected [http://www.snapdeal.com] but found [https://www.snapdeal.com/]
+	at dec_21.Test02.snapdealTest(Test02.java:26)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Snapdeal home page test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestNG_Suite-class-passed -->
+          </div> <!-- suite-TestNG_Suite-class-failed -->
         </div> <!-- panel TestNG_Suite -->
         <div panel-name="test-xml-TestNG_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -159,7 +152,7 @@
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Regression&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;dec_21.NaukriTest&quot;/&gt;
+      &lt;class name=&quot;dec_21.Test02&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Regression --&gt;
 &lt;/suite&gt; &lt;!-- TestNG Suite --&gt;
@@ -199,20 +192,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'searchNaukri')
-data.setCell(0, 2, 'dec_21.NaukriTest')
-data.setCell(0, 3, 26322);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'searchNaukri')
-data.setCell(1, 2, 'dec_21.NaukriTest')
-data.setCell(1, 3, 11734);
+data.setCell(0, 1, 'snapdealTest')
+data.setCell(0, 2, 'dec_21.Test02')
+data.setCell(0, 3, 12888);
 window.suiteTableData['TestNG_Suite']= { tableData: data, tableDiv: 'times-div-TestNG_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-TestNG_Suite">
               </div> <!-- times-div-TestNG_Suite -->
             </div> <!-- times-div -->
@@ -223,6 +212,12 @@ return data;
             <span class="header-content">Reporter output for TestNG Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">snapdealTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Url is entered. https://www.snapdeal.com/</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-TestNG_Suite" class="panel">
@@ -238,30 +233,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">dec_21.NaukriTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">dec_21.Test02</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">searchNaukri(http://www.naukri.com, Java, Noida)</span>
-                <span class="method-start">9984 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">snapdealTest</span>
+                <span class="method-start">10764 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">quitBrowser</span>
-                <span class="method-start">21721 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">openBrowser(chrome)</span>
-                <span class="method-start">22404 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">searchNaukri(http://www.naukri.com, C#, Gurgaon)</span>
-                <span class="method-start">32506 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">quitBrowser</span>
-                <span class="method-start">58829 ms</span>
+                <span class="method-name">quitBrowser([TestResult name=snapdealTest status=FAILURE method=Test02.snapdealTest()[pri:0, instance:dec_21.Tes...)</span>
+                <span class="method-start">23657 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

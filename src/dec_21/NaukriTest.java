@@ -21,7 +21,7 @@ public class NaukriTest extends BaseClass{
 		Reporter.log("Url is entered.");
 		
 		//Click on Searh job text box
-		WebElement searchJobTextBox = driver.findElement(By.id("qsbClick"));
+		WebElement searchJobTextBox = driver.findElement(By.id("qsbClick1"));
 		searchJobTextBox.click();
 		Reporter.log("Click on Search job text box.");
 		
@@ -45,18 +45,19 @@ public class NaukriTest extends BaseClass{
 	//Define Test Data
 	@DataProvider(name = "testData")
 	public Object[][] provideData(){
-		Object[][] xData = new Object[2][3];
+		Object[][] xData = new Object[1][3];
 		
 		//1st row data
 		xData[0][0] = "http://www.naukri.com";
 		xData[0][1] = "Java";                  //Skills
 		xData[0][2] = "Noida";                 // Location
 		
+		/*
 		//2nd row data
 		xData[1][0] = "http://www.naukri.com";
 		xData[1][1] = "C#";                  //Skills
 		xData[1][2] = "Gurgaon";                 // Location
-		
+		*/
 		return xData;
 	}
 }
