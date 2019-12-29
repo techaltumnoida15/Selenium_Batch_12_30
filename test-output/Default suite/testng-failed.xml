@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.techAltum.com.TC05">
+      <class name="org.techAltum.com.TC03">
         <methods>
-          <include name="openBrowser"/>
-          <include name="quitBrowser"/>
-          <include name="MouseOverNaukri"/>
+          <include name="testCase03"/>
         </methods>
-      </class> <!-- org.techAltum.com.TC05 -->
+      </class> <!-- org.techAltum.com.TC03 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

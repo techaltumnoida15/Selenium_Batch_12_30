@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Regression</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/3</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Dec 22 13:48:51 IST 2019</td>
+<td>Started on:</td><td>Sun Dec 29 14:22:46 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>25 seconds (25636 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (55 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,24 +75,82 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='dec_21.Test02.snapdealTest()'><b>snapdealTest</b><br>Test class: dec_21.Test02<br>Test method: Snapdeal home page test<br/>
-<a href="#Output-2112233878" onClick='toggleBox("Output-2112233878", this, "Show output", "Hide output");'>Show output</a>
+<td title='org.techAltum.com.TC03.testCase03()'><b>testCase03</b><br>Test class: org.techAltum.com.TC03<br/>
+<a href="#Output-1477657879" onClick='toggleBox("Output-1477657879", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2112233878" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2112233878">
-Url is entered. https://www.snapdeal.com/<br/>
+<a href="#Output-1477657879" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1477657879">
+Test startted = testCase03<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: Page url doesnt match. expected [http://www.snapdeal.com] but found [https://www.snapdeal.com/]
-	at dec_21.Test02.snapdealTest(Test02.java:26)
+<td><div><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+	at org.techAltum.com.TC03.testCase03(TC03.java:18)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2112233878", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2112233878'><pre>java.lang.AssertionError: Page url doesnt match. expected [http://www.snapdeal.com] but found [https://www.snapdeal.com/]
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1477657879", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1477657879'><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at dec_21.Test02.snapdealTest(Test02.java:26)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at org.techAltum.com.TC03.testCase03(TC03.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>org.techAltum.com.TC03@6ec8211c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.techAltum.com.TC03.testCase03()'><b>testCase03</b><br>Test class: org.techAltum.com.TC03<br/>
+<a href="#Output-1678854096" onClick='toggleBox("Output-1678854096", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1678854096" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1678854096">
+Test startted = testCase03<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+	at org.techAltum.com.TC03.testCase03(TC03.java:18)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1678854096", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1678854096'><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at org.techAltum.com.TC03.testCase03(TC03.java:18)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -122,8 +180,108 @@ Url is entered. https://www.snapdeal.com/<br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>12</td>
-<td>dec_21.Test02@544a2ea6</td></tr>
+<td>0</td>
+<td>org.techAltum.com.TC03@6ec8211c</td></tr>
+<tr>
+<td title='org.techAltum.com.TC03.testCase03()'><b>testCase03</b><br>Test class: org.techAltum.com.TC03<br/>
+<a href="#Output-878274034" onClick='toggleBox("Output-878274034", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-878274034" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-878274034">
+Test startted = testCase03<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+	at org.techAltum.com.TC03.testCase03(TC03.java:18)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace878274034", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace878274034'><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at org.techAltum.com.TC03.testCase03(TC03.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>org.techAltum.com.TC03@6ec8211c</td></tr>
+<tr>
+<td title='org.techAltum.com.TC03.testCase03()'><b>testCase03</b><br>Test class: org.techAltum.com.TC03<br/>
+<a href="#Output-1296674576" onClick='toggleBox("Output-1296674576", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1296674576" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1296674576">
+Test startted = testCase03<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+	at org.techAltum.com.TC03.testCase03(TC03.java:18)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1296674576", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1296674576'><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at org.techAltum.com.TC03.testCase03(TC03.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:204)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>org.techAltum.com.TC03@6ec8211c</td></tr>
 </table><p>
 </body>
 </html>

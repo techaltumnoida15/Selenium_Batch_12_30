@@ -2,15 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG Suite]">
   <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.listener.com.TestResultListener"/>
+    <listener class-name="org.listener.com.AnnotationTransformer"/>
+  </listeners>
   <test thread-count="5" name="Regression(failed)">
     <classes>
-      <class name="dec_21.Test02">
+      <class name="org.techAltum.com.TC03">
         <methods>
-          <include name="openBrowser"/>
-          <include name="quitBrowser"/>
-          <include name="snapdealTest"/>
+          <include name="testCase03"/>
         </methods>
-      </class> <!-- dec_21.Test02 -->
+      </class> <!-- org.techAltum.com.TC03 -->
     </classes>
   </test> <!-- Regression(failed) -->
 </suite> <!-- Failed suite [TestNG Suite] -->

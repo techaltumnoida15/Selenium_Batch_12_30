@@ -66,7 +66,7 @@ public class BaseClass {
 		
 		String methodName = testResult.getMethod().getMethodName();
 		System.out.println("Method name = " + methodName);
-		
+		/*
 		if(!testResult.isSuccess()) {
 			File srcScreenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			
@@ -83,7 +83,7 @@ public class BaseClass {
 		else {
 			System.out.println("Test is pass");
 		}
-		
+		*/
 		
 		/*
 		 * if(testResult.SKIP == 3) { System.out.println("Test is skipped."); }

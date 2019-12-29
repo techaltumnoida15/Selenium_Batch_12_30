@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-TestNG_Suite">
-                    <span>F:\Sel_Projects_v8\TechAltum_Selenium_Project_4\TestNG.xml</span>
+                    <span>F:\Sel_Projects_v8\TechAltum_Selenium_Project_4\TestNG2.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">4 methods, 1 failed,  3 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,10 +102,34 @@
                     <div class="method-list-content failed suite-TestNG_Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Suite" title="dec_21.Test02" hash-for-method="snapdealTest">snapdealTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Suite" title="org.techAltum.com.TC03" hash-for-method="testCase03">testCase03</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-TestNG_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-TestNG_Suite" class="hide-methods skipped suite-TestNG_Suite"> (hide)</a> <!-- hide-methods skipped suite-TestNG_Suite -->
+                      <a href="#" panel-name="suite-TestNG_Suite" class="show-methods skipped suite-TestNG_Suite"> (show)</a> <!-- show-methods skipped suite-TestNG_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-TestNG_Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Suite" title="org.techAltum.com.TC03" hash-for-method="testCase03">testCase03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Suite" title="org.techAltum.com.TC03" hash-for-method="testCase03">testCase03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNG_Suite" title="org.techAltum.com.TC03" hash-for-method="testCase03">testCase03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-TestNG_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -120,29 +144,71 @@
           <div class="suite-TestNG_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">dec_21.Test02</span>
+              <span class="class-name">org.techAltum.com.TC03</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="snapdealTest">
-                  </a> <!-- snapdealTest -->
-                  <span class="method-name">snapdealTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: Page url doesnt match. expected [http://www.snapdeal.com] but found [https://www.snapdeal.com/]
-	at dec_21.Test02.snapdealTest(Test02.java:26)
+                  <a name="testCase03">
+                  </a> <!-- testCase03 -->
+                  <span class="method-name">testCase03</span>
+                  <div class="stack-trace">java.lang.AssertionError: did not expect to find [true] but found [false]
+	at org.techAltum.com.TC03.testCase03(TC03.java:18)
 	at java.util.ArrayList.forEach(Unknown Source)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
-                  <em>
-(Snapdeal home page test)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-TestNG_Suite-class-failed -->
+          <div class="suite-TestNG_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">org.techAltum.com.TC03</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase03">
+                  </a> <!-- testCase03 -->
+                  <span class="method-name">testCase03</span>
+                  <div class="stack-trace">java.lang.AssertionError: did not expect to find [true] but found [false]
+	at org.techAltum.com.TC03.testCase03(TC03.java:18)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase03">
+                  </a> <!-- testCase03 -->
+                  <span class="method-name">testCase03</span>
+                  <div class="stack-trace">java.lang.AssertionError: did not expect to find [true] but found [false]
+	at org.techAltum.com.TC03.testCase03(TC03.java:18)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase03">
+                  </a> <!-- testCase03 -->
+                  <span class="method-name">testCase03</span>
+                  <div class="stack-trace">java.lang.AssertionError: did not expect to find [true] but found [false]
+	at org.techAltum.com.TC03.testCase03(TC03.java:18)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Suite-class-skipped -->
         </div> <!-- panel TestNG_Suite -->
         <div panel-name="test-xml-TestNG_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">F:\Sel_Projects_v8\TechAltum_Selenium_Project_4\TestNG.xml</span>
+            <span class="header-content">F:\Sel_Projects_v8\TechAltum_Selenium_Project_4\TestNG2.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -150,9 +216,13 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;TestNG Suite&quot;&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.listener.com.TestResultListener&quot;/&gt;
+    &lt;listener class-name=&quot;org.listener.com.AnnotationTransformer&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Regression&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;dec_21.Test02&quot;/&gt;
+      &lt;class name=&quot;org.techAltum.com.TC03&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Regression --&gt;
 &lt;/suite&gt; &lt;!-- TestNG Suite --&gt;
@@ -192,16 +262,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'snapdealTest')
-data.setCell(0, 2, 'dec_21.Test02')
-data.setCell(0, 3, 12888);
+data.setCell(0, 1, 'testCase03')
+data.setCell(0, 2, 'org.techAltum.com.TC03')
+data.setCell(0, 3, 9);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testCase03')
+data.setCell(1, 2, 'org.techAltum.com.TC03')
+data.setCell(1, 3, 2);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testCase03')
+data.setCell(2, 2, 'org.techAltum.com.TC03')
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testCase03')
+data.setCell(3, 2, 'org.techAltum.com.TC03')
+data.setCell(3, 3, 1);
 window.suiteTableData['TestNG_Suite']= { tableData: data, tableDiv: 'times-div-TestNG_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 13 ms</span>
               <div id="times-div-TestNG_Suite">
               </div> <!-- times-div-TestNG_Suite -->
             </div> <!-- times-div -->
@@ -213,9 +295,27 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">snapdealTest</span>
+              <span class="reporter-method-name">testCase03</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Url is entered. https://www.snapdeal.com/</span>
+                <span class="reporter-method-output">Test startted = testCase03</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testCase03</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test startted = testCase03</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testCase03</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test startted = testCase03</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testCase03</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test startted = testCase03</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -233,21 +333,25 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">dec_21.Test02</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openBrowser(chrome)</span>
+              <div class="chronological-class-name">org.techAltum.com.TC03</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCase03</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCase03</span>
+                <span class="method-start">13 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCase03</span>
+                <span class="method-start">16 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">snapdealTest</span>
-                <span class="method-start">10764 ms</span>
+                <span class="method-name">testCase03</span>
+                <span class="method-start">19 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">quitBrowser([TestResult name=snapdealTest status=FAILURE method=Test02.snapdealTest()[pri:0, instance:dec_21.Tes...)</span>
-                <span class="method-start">23657 ms</span>
-              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
