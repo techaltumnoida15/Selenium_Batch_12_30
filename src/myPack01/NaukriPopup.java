@@ -4,12 +4,10 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import basePack.BaseClass;
-import sun.util.calendar.BaseCalendar;
+//import sun.util.calendar.BaseCalendar;
 
 public class NaukriPopup extends BaseClass{
 

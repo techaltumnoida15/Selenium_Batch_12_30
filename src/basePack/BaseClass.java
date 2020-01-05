@@ -1,16 +1,16 @@
 package basePack;
 
-import java.io.File;
-import java.io.IOException;
+//import java.io.File;
+//import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+//import org.apache.commons.io.FileUtils;
+//import org.openqa.selenium.OutputType;
+//import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.ITestResult;
+//import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
@@ -19,7 +19,7 @@ public class BaseClass {
 
 	protected WebDriver driver;
 	
-	@Parameters({"browser"})
+	//@Parameters({"browser"})
 	@BeforeMethod
 	public void openBrowser(String browser) {
 		String projectPath = System.getProperty("user.dir");
@@ -53,7 +53,7 @@ public class BaseClass {
 	}
 	
 	@AfterMethod
-	public void quitBrowser(ITestResult testResult) throws Exception {
+	/*public void quitBrowser(ITestResult testResult) throws Exception {
 		
 		//How to rerun failed tests using testng listner
 		//Implement
@@ -88,7 +88,13 @@ public class BaseClass {
 		/*
 		 * if(testResult.SKIP == 3) { System.out.println("Test is skipped."); }
 		 */
-		
+	//@AfterMethod
+	public void exist()
+	{
 		driver.quit();
 	}
+	
+		
+		//driver.quit();
+	
 }
